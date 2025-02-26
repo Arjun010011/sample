@@ -6,7 +6,6 @@ html,
 body {
   font-family: Arial, Helvetica, sans-serif;
   height: 100%;
-  background-color: rgb(245, 244, 242);
 }
 
 @layer base {
@@ -68,6 +67,17 @@ body {
 @layer base {
   * {
     @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
   }
   body {
     @apply bg-background text-foreground;
