@@ -41,7 +41,7 @@ const Navbar = () => {
             <Button variant="ghost" size="sm" asChild>
               <Link href="/document">Enter Cooper</Link>
             </Button>
-            <UserButton afterSignOutUrl="/" />
+            <UserButton />
           </>
         )}
       </div>
