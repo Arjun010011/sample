@@ -4,7 +4,7 @@ import { Spinner } from "@/components/spinner";
 import { useConvexAuth } from "convex/react";
 import { redirect } from "next/navigation";
 
-const mainLayout = ({ children }: { children: React.ReactNode }) => {
+const MainLayout = ({ children }: { children: React.ReactNode }) => {
   const { isAuthenticated, isLoading } = useConvexAuth();
   if (isLoading) {
     return (
@@ -19,4 +19,4 @@ const mainLayout = ({ children }: { children: React.ReactNode }) => {
   return <div className="">{children}</div>;
 };
 
-export default mainLayout;
+export default MainLayout;
