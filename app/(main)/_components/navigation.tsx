@@ -1,7 +1,6 @@
 "use client";
 
 import { ChevronsLeft, MenuIcon } from "lucide-react";
-import { usePathname } from "next/navigation";
 import { ElementRef, useRef, useState } from "react";
 import { useMediaQuery } from "usehooks-ts";
 import { cn } from "@/lib/utils";
@@ -11,7 +10,7 @@ const Navigation = () => {
   const isMobile = useMediaQuery("(max-width:768px)");
   const sideBarRef = useRef<ElementRef<"aside">>(null);
   const navbarRef = useRef<ElementRef<"div">>(null);
-  const [isResetting, setIsResetting] = useState(false);
+  const [isResetting] = useState(false);
   // const [isCollapsed, setIsCollapsed] = useState(isMobile);
 
   const handleMouseDown = (
