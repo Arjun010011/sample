@@ -7,12 +7,12 @@ import { useMediaQuery } from "usehooks-ts";
 import { cn } from "@/lib/utils";
 const Navigation = () => {
   const isResizingRef = useRef(false);
-  const pathName = usePathname();
+  // const pathName = usePathname();
   const isMobile = useMediaQuery("(max-width:768px)");
   const sideBarRef = useRef<ElementRef<"aside">>(null);
   const navbarRef = useRef<ElementRef<"div">>(null);
   const [isResetting, setIsResetting] = useState(false);
-  const [isCollapsed, setIsCollapsed] = useState(isMobile);
+  // const [isCollapsed, setIsCollapsed] = useState(isMobile);
 
   const handleMouseDown = (
     event: React.MouseEvent<HTMLDivElement, MouseEvent>
