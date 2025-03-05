@@ -24,7 +24,7 @@ const UserItem = () => {
                 <AvatarImage src={user?.imageUrl} className="rounded-full" />
               </Avatar>
               <span className="text-start font-medium line-clamp-1">
-                {user?.fullName}&apos;s cooper
+                {user?.fullName}&apos;'s cooper
               </span>
             </div>
             <ChevronsLeftRightIcon className="rotate-90 ml-2 text-muted-foreground h-4 w-4" />
