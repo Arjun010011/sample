@@ -5,6 +5,7 @@ import { ElementRef, useEffect, useRef, useState } from "react";
 import { useMediaQuery } from "usehooks-ts";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
+import UserItem from "./userItem";
 const Navigation = () => {
   const isResizingRef = useRef(false);
   const pathName = usePathname();
@@ -100,7 +101,7 @@ const Navigation = () => {
           <ChevronsLeft className="h-5 w-5" />
         </div>
         <div className="">
-          <p>action items</p>
+          <UserItem />
         </div>
         <div className="mt-4">
           <p>Documents</p>

@@ -1,6 +1,8 @@
 "use client";
 import Image from "next/image";
 import { useUser } from "@clerk/nextjs";
+import { Button } from "@/components/ui/button";
+import { PlusCircle } from "lucide-react";
 const DocumentPage = () => {
   const { user } = useUser();
   return (
@@ -20,6 +22,10 @@ const DocumentPage = () => {
         className="hidden dark:block"
       />
       <h2 className="text-lg ">Welcome to {user?.firstName}&apos;s cooper</h2>
+      <Button>
+        <PlusCircle className="h-4 w-4 mr-2" />
+        Create a note
+      </Button>
     </div>
   );
 };
